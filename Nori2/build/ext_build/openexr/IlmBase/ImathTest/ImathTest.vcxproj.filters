@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testBoxAlgo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testColor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testExtractEuler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testExtractSHRT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testFrustum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testFrustumTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testFun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testInvert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testJacobiEigenSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testLineAlgo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testMiscMatrixAlgo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testProcrustes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testQuat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testQuatSetRotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testQuatSlerp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testRandom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testRoots.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testShear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testTinySVD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\testVec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\ImathTest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FD04912C-2F1A-3476-902E-B052618B9AAF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

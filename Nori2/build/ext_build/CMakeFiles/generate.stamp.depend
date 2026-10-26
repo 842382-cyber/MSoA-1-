@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCommon.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/CMakeFiles/cmake.verify_globs
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/CMakeLists.txt

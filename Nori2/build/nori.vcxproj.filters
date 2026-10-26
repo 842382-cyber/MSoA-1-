@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\reflectance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\accel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\bitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\chi2test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\dielectric.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\diffuse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\environment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\independent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\microfacet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\mirror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\obj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\perspective.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\proplist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\rfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\ttest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\warp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\0_ndotl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\0_toon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\0_aov.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\accel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\bbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\bitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\bsdf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\dpdf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\integrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\emitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\proplist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\ray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\rfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\sampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\warp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\include\nori\reflectance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{45AAEB9E-69F7-3889-870C-6E67B23D7DED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FD04912C-2F1A-3476-902E-B052618B9AAF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

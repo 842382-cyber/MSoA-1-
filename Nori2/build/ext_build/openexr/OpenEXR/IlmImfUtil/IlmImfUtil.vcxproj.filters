@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImageChannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfFlatImageChannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfDeepImageChannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfSampleCountChannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImageLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfFlatImageLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfDeepImageLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfFlatImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfDeepImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImageIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfFlatImageIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfDeepImageIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImageDataWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImageChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfFlatImageChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfDeepImageChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfSampleCountChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImageLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfFlatImageLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfDeepImageLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfFlatImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfDeepImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImageIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfFlatImageIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfDeepImageIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImageDataWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfImageChannelRenaming.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\ImfUtilExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\OpenEXR\IlmImfUtil\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{45AAEB9E-69F7-3889-870C-6E67B23D7DED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FD04912C-2F1A-3476-902E-B052618B9AAF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

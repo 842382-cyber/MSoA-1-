@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\ca65559b71c561d81b6fddc8a8789929\Continuous.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\openexr\CMakeFiles\Continuous" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A52D2928-8C59-3A69-A671-8D05D192F6BC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

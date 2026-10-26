@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83B0B375-77D7-30C7-8C0A-A3B1FDCC9B99}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>tbb_def_files</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\src\rml\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\src\rml\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\src\rml\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\src\rml\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\src\tbb\win64-tbb-export.def">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing tbb.def</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe" /TC /EP C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/src/tbb/win64-tbb-export.def -I C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/include &gt; tbb.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbb.def</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing tbb.def</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe" /TC /EP C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/src/tbb/win64-tbb-export.def -I C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/include &gt; tbb.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbb.def</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing tbb.def</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe" /TC /EP C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/src/tbb/win64-tbb-export.def -I C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/include &gt; tbb.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbb.def</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing tbb.def</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe" /TC /EP C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/src/tbb/win64-tbb-export.def -I C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/include &gt; tbb.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbb.def</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\src\tbbmalloc\win64-tbbmalloc-export.def">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Preprocessing tbbmalloc.def</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe" /TC /EP C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/src/tbbmalloc/win64-tbbmalloc-export.def -I C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/include &gt; tbbmalloc.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbbmalloc.def</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Preprocessing tbbmalloc.def</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe" /TC /EP C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/src/tbbmalloc/win64-tbbmalloc-export.def -I C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/include &gt; tbbmalloc.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbbmalloc.def</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Preprocessing tbbmalloc.def</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe" /TC /EP C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/src/tbbmalloc/win64-tbbmalloc-export.def -I C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/include &gt; tbbmalloc.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbbmalloc.def</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Preprocessing tbbmalloc.def</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe" /TC /EP C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/src/tbbmalloc/win64-tbbmalloc-export.def -I C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/include &gt; tbbmalloc.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbbmalloc.def</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\011c4e11cc161e64f6d929d431b4ec7e\tbb_def_files.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbb.def;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbbmalloc.def;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\CMakeFiles\tbb_def_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbb.def;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbbmalloc.def;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\CMakeFiles\tbb_def_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbb.def;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbbmalloc.def;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\CMakeFiles\tbb_def_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbb.def;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\tbbmalloc.def;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\CMakeFiles\tbb_def_files</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2 -BC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build --check-stamp-file C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/ext_build/tbb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeASM_MASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectASMLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectASM_MASMLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\4.4.3\CMakeASM_MASMCompiler.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\cmake.verify_globs;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\build\version_string.ver.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2 -BC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build --check-stamp-file C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/ext_build/tbb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeASM_MASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectASMLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectASM_MASMLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\4.4.3\CMakeASM_MASMCompiler.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\cmake.verify_globs;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\build\version_string.ver.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2 -BC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build --check-stamp-file C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/ext_build/tbb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeASM_MASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectASMLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectASM_MASMLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\4.4.3\CMakeASM_MASMCompiler.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\cmake.verify_globs;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\build\version_string.ver.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2 -BC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build --check-stamp-file C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/ext_build/tbb/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeASM_MASMLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectASMLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectASM_MASMLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\4.4.3\CMakeASM_MASMCompiler.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\cmake.verify_globs;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\tbb\build\version_string.ver.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\tbb\CMakeFiles\tbb_def_files">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ZERO_CHECK.vcxproj">
+      <Project>{987C9469-1B20-3BEA-9008-E3C063A2790E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

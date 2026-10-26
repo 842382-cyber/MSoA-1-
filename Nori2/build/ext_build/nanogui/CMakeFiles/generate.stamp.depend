@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.4/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCXXSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/CMakeFiles/cmake.verify_globs
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/CMakeLists.txt
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/nanoguiConfig.cmake.in

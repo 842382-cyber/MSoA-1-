@@ -1,0 +1,15 @@
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\adler32.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\adler32.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\compress.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\compress.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\crc32.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\crc32.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\deflate.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\deflate.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\gzclose.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\gzclose.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\gzlib.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\gzlib.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\gzread.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\gzread.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\gzwrite.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\gzwrite.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\inflate.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\inflate.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\infback.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\infback.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\inftrees.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\inftrees.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\inffast.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\inffast.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\trees.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\trees.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\uncompr.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\uncompr.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\zutil.c;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zlibstatic.dir\Release\zutil.obj

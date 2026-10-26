@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.4/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/CMakeFiles/cmake.verify_globs
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/openexr/OpenEXR/config/CMakeLists.txt
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/openexr/OpenEXR/config/OpenEXRConfig.cmake.in
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/openexr/OpenEXR/config/OpenEXRConfig.h.in_cmake
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/openexr/OpenEXR/config/OpenEXRConfigInternal.h.in_cmake

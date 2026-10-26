@@ -1,0 +1,20 @@
+^C:\USERS\ALBAS\ONEDRIVE\DOCUMENTOS\GITHUB\MSOA-1-\NORI2\BUILD\CMAKEFILES\D92091CF8D42649B066608C46FC18D14\NANOGUI_RESOURCES.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DOUTPUT_C=nanogui_resources.cpp -DOUTPUT_H=nanogui_resources.h -DINPUT_FILES=C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/FontAwesome-Solid.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Inconsolata-Regular.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Roboto-Bold.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Roboto-Regular.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/imageview_fragment.gl,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/imageview_vertex.gl -P C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/bin2c.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ALBAS\ONEDRIVE\DOCUMENTOS\GITHUB\MSOA-1-\NORI2\EXT\NANOGUI\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2 -BC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build --check-stamp-file C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/ext_build/nanogui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

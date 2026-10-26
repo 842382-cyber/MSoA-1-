@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\gzclose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\gzlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\gzread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\gzwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\inflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\infback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\inftrees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\inffast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\trees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\uncompr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\zutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib\zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\deflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\gzguts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\inffast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\inffixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\inflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\inftrees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\trees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\zutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{45AAEB9E-69F7-3889-870C-6E67B23D7DED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FD04912C-2F1A-3476-902E-B052618B9AAF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

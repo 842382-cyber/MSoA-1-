@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathRandom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathColorAlgo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathFun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathVec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathExc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathMatrixAlgo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathBoxAlgo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathColorAlgo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathColor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathEuler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathExc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathForward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathFrustum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathFrustumTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathFun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathGLU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathHalfLimits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathInt64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathInterval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathLimits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathLineAlgo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathMatrixAlgo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathNamespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathPlane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathPlatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathQuat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathRandom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathRoots.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathShear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathSphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathVecAlgo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\ImathVec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\openexr\IlmBase\Imath\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{45AAEB9E-69F7-3889-870C-6E67B23D7DED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FD04912C-2F1A-3476-902E-B052618B9AAF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

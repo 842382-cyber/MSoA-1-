@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{67EF5B3A-AAF5-3C98-9EDE-E39A6CFB2675}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>nanogui</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nanogui.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nanogui_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nanogui.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nanogui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nanogui.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nanogui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nanogui.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nanogui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4324;4702</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR="Debug";</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /wd4324 /wd4702</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DisableSpecificWarnings>4324;4702</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR="Release";</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /wd4324 /wd4702</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DisableSpecificWarnings>4324;4702</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR="MinSizeRel";</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /wd4324 /wd4702</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4324;4702</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;NANOGUI_USE_OPENGL;NANOGUI_BUILD;NANOGUI_GLAD;CMAKE_INTDIR="RelWithDebInfo";</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>%(AdditionalOptions) /wd4324 /wd4702</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\zlib;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanobind\ext\robin_map\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glfw\include;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\eigen;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nativefiledialog-extended\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\d92091cf8d42649b066608c46fc18d14\nanogui_resources.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running bin2c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DOUTPUT_C=nanogui_resources.cpp -DOUTPUT_H=nanogui_resources.h -DINPUT_FILES=C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/FontAwesome-Solid.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Inconsolata-Regular.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Roboto-Bold.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Roboto-Regular.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/imageview_fragment.gl,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/imageview_vertex.gl -P C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/bin2c.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\CMakeLists.txt;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\FontAwesome-Solid.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Inconsolata-Regular.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Roboto-Bold.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Roboto-Regular.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\imageview_fragment.gl;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\imageview_vertex.gl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\nanogui_resources.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\nanogui_resources.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running bin2c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DOUTPUT_C=nanogui_resources.cpp -DOUTPUT_H=nanogui_resources.h -DINPUT_FILES=C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/FontAwesome-Solid.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Inconsolata-Regular.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Roboto-Bold.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Roboto-Regular.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/imageview_fragment.gl,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/imageview_vertex.gl -P C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/bin2c.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\CMakeLists.txt;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\FontAwesome-Solid.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Inconsolata-Regular.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Roboto-Bold.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Roboto-Regular.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\imageview_fragment.gl;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\imageview_vertex.gl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\nanogui_resources.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\nanogui_resources.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running bin2c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DOUTPUT_C=nanogui_resources.cpp -DOUTPUT_H=nanogui_resources.h -DINPUT_FILES=C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/FontAwesome-Solid.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Inconsolata-Regular.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Roboto-Bold.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Roboto-Regular.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/imageview_fragment.gl,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/imageview_vertex.gl -P C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/bin2c.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\CMakeLists.txt;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\FontAwesome-Solid.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Inconsolata-Regular.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Roboto-Bold.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Roboto-Regular.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\imageview_fragment.gl;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\imageview_vertex.gl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\nanogui_resources.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\nanogui_resources.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running bin2c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DOUTPUT_C=nanogui_resources.cpp -DOUTPUT_H=nanogui_resources.h -DINPUT_FILES=C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/FontAwesome-Solid.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Inconsolata-Regular.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Roboto-Bold.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/Roboto-Regular.ttf,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/imageview_fragment.gl,C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/imageview_vertex.gl -P C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/resources/bin2c.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\CMakeLists.txt;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\FontAwesome-Solid.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Inconsolata-Regular.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Roboto-Bold.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\Roboto-Regular.ttf;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\imageview_fragment.gl;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\imageview_vertex.gl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\nanogui_resources.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\nanogui_resources.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2 -BC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build --check-stamp-file C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/ext_build/nanogui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\cmake.verify_globs;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\nanoguiConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2 -BC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build --check-stamp-file C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/ext_build/nanogui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\cmake.verify_globs;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\nanoguiConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2 -BC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build --check-stamp-file C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/ext_build/nanogui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\cmake.verify_globs;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\nanoguiConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/nanogui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2 -BC:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build --check-stamp-file C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/ext_build/nanogui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\CMakeFiles\cmake.verify_globs;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\resources\nanoguiConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src\nanovg.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4005;4456;4457;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4005;4456;4457;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4005;4456;4457;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4005;4456;4457;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\nanovg\src\stb_image.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\texture_gl.cpp" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\shader_gl.cpp" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\renderpass_gl.cpp" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\opengl.cpp" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\fence_gl.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\opengl_check.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\src\glad.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4055;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4055;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">4055;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4055;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include\glad\glad.h" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\ext\glad\include\KHR\khrplatform.h" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\context.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\init.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\input.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\monitor.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\platform.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\vulkan.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\window.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\egl_context.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\osmesa_context.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\null_init.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\null_monitor.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\null_window.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\null_joystick.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\win32_module.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\win32_time.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\win32_thread.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\win32_init.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\win32_joystick.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\win32_monitor.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\win32_window.obj" />
+    <Object Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.dir\$(Configuration)\wgl_context.obj" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\nanogui_resources.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\common.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\common.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\widget.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\widget.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\theme.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\theme.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\layout.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\layout.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\screen.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\screen.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\label.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\label.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\window.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\window.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\popup.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\popup.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\checkbox.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\checkbox.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\button.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\button.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\popupbutton.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\popupbutton.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\combobox.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\combobox.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\progressbar.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\progressbar.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\slider.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\slider.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\messagedialog.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\messagedialog.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\textbox.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\textbox.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\textarea.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\textarea.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\imagepanel.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\imagepanel.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\vscrollpanel.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\vscrollpanel.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\colorwheel.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\colorwheel.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\colorpicker.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\colorpicker.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\graph.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\graph.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\tabwidget.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\tabwidget.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\canvas.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\canvas.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\chroma.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\chroma.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\texture.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\texture.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\shader.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\shader.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\quad.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\quad.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\lines.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\lines.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\camera.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\camera.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\imageview.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\imageview.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\traits.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\traits.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\colorpass.h" />
+    <ClCompile Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\src\colorpass.cpp" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\renderpass.h" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\fence.h" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\formhelper.h" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\icons.h" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\toolbutton.h" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\opengl.h" />
+    <ClInclude Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\ext\nanogui\include\nanogui\nanogui.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ZERO_CHECK.vcxproj">
+      <Project>{987C9469-1B20-3BEA-9008-E3C063A2790E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\glfw\src\glfw.vcxproj">
+      <Project>{E946109D-67B1-305A-8FF4-141532AFECEF}</Project>
+      <Name>glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\ext_build\nanogui\ext\nativefiledialog-extended\src\nfd.vcxproj">
+      <Project>{5FD90F9F-A02E-354B-B219-7F363F3B4D22}</Project>
+      <Name>nfd</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

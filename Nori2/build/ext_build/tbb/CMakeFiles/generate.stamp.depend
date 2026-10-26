@@ -1,0 +1,27 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.4/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeASMCompiler.cmake.in
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeASMInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeASM_MASMInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCompilerIdDetection.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASMCompiler.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineASM_MASMCompiler.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompiler.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestASMCompiler.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestASM_MASMCompiler.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCXXSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeASMLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeASM_MASMLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeInspectASMLinker.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeInspectASM_MASMLinker.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCommon.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/CMakeFiles/4.4.3/CMakeASM_MASMCompiler.cmake
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/build/CMakeFiles/cmake.verify_globs
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/CMakeLists.txt
+C:/Users/albas/OneDrive/Documentos/GitHub/MSoA-1-/Nori2/ext/tbb/build/version_string.ver.in
