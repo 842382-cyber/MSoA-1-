@@ -121,6 +121,7 @@ struct WarpTest {
 
         MatrixXf points, values;
         generatePoints(sampleCount, Independent, points, values);
+        
 
         for (int i=0; i<sampleCount; ++i) {
             if (values(0, i) == 0)
