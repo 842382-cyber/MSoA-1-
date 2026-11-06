@@ -47,36 +47,72 @@ float Warp::squareToUniformDiskPdf(const Point2f &p) {
 }
 
 Point2f Warp::squareToUniformTriangle(const Point2f& sample) {
-    throw NoriException("Warp::squareToUniformTriangle() is not yet implemented!");
+    float sqrtu = sqrt(sample.x());
+
+    float u = 1.0f - sqrtu;
+    float v = sample.y() * sqrtu;
+
+    return Point2f(u, v);
 }
 
 float Warp::squareToUniformTrianglePdf(const Point2f& p) {
-    throw NoriException("Warp::squareToUniformTrianglePdf() is not yet implemented!");
+    if(p.x() >= 0.0f && p.y() >= 0.0f && p.x() + p.y() <= 1.0f){
+        return 2.0f; // area = (1*1)/2 = 0.5 --> pdf = 1 / 0.5 = 2.0
+    }
+
+    return 0.0f;
 }
 
 
 Vector3f Warp::squareToUniformSphere(const Point2f &sample) {
-    throw NoriException("Warp::squareToUniformSphere() is not yet implemented!");
+    double phi = 2 * M_PI * sample.x();
+    double theta = acos(1 - 2 * sample.y());
+
+    double x = sin(theta) * cos(phi);
+    double y = sin(theta) * sin(phi);
+    double z = cos(theta);
+
+    return Vector3f(x, y, z);
 }
 
 float Warp::squareToUniformSpherePdf(const Vector3f &v) {
-    throw NoriException("Warp::squareToUniformSpherePdf() is not yet implemented!");
+    return 1.0 / (4 * M_PI);
 }
 
 Vector3f Warp::squareToUniformHemisphere(const Point2f &sample) {
-    throw NoriException("Warp::squareToUniformHemisphere() is not yet implemented!");
+    double phi = 2 * M_PI * sample.y();
+    double theta = acos(sqrt(sample.x()));
+
+    double x = sin(theta) * cos(phi);
+    double y = sin(theta) * sin(phi);
+    double z = cos(theta);
+
+    return Vector3f(x, y, z);
 }
 
 float Warp::squareToUniformHemispherePdf(const Vector3f &v) {
-    throw NoriException("Warp::squareToUniformHemispherePdf() is not yet implemented!");
+    if(v.z() < 0.0){
+        return 0.0;
+    }
+    return 1 / (2 * M_PI);
 }
 
 Vector3f Warp::squareToCosineHemisphere(const Point2f &sample) {
-    throw NoriException("Warp::squareToCosineHemisphere() is not yet implemented!");
+    double phi = 2 * M_PI * sample.x();
+    double theta = acos(sqrt(1 - sample.y()));
+
+    double x = sin(theta) * cos(phi);
+    double y = sin(theta) * sin(phi);
+    double z = cos(theta);
+
+    return Vector3f(x, y, z);
 }
 
 float Warp::squareToCosineHemispherePdf(const Vector3f &v) {
-    throw NoriException("Warp::squareToCosineHemispherePdf() is not yet implemented!");
+    if(v.z() < 0.0){
+        return 0.0;
+    }
+    return v.z() / M_PI;
 }
 
 Vector3f Warp::squareToBeckmann(const Point2f &sample, float alpha) {

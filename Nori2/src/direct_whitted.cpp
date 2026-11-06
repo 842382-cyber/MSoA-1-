@@ -22,7 +22,6 @@ public:
         if (!scene->rayIntersect(ray, its))
             return scene->getBackground(ray);
 
-        float pdflight;
         EmitterQueryRecord emitterRecord(its.p);
 
         // Get all lights in the scene
@@ -40,11 +39,15 @@ public:
             // For that, we create a ray object (shadow ray)
             // and compute the intersection
             
-            Vector3f dir_shadow = (emitterRecord.p - its.p).normalized();
-            Intersection its_shadow;
-            
-            if(scene->rayIntersect(Ray3f(its.p, dir_shadow), its_shadow) && its_shadow.t <= emitterRecord.dist){
-                break;
+            // Check if the light source is below the surface
+            float cosTheta = its.shFrame.n.dot(emitterRecord.wi);
+            if (cosTheta <= 0.0f){
+                continue; // The light source is below the surface, skip to the next light
+            }
+
+            Intersection its_shadow;            
+            if(scene->rayIntersect(Ray3f(its.p + its.shFrame.n * Epsilon, emitterRecord.wi), its_shadow) && its_shadow.t <= emitterRecord.dist){
+                continue; // The light source is occluded, skip to the next light
             }
 
             // Finally, we evaluate the BSDF. For that, we need to build
@@ -57,7 +60,7 @@ public:
             BSDFQueryRecord bsdfRecord(its.toLocal(-ray.d), its.toLocal(emitterRecord.wi), its.uv, ESolidAngle);
             // For each light, we accomulate the incident light times the
             // foreshortening times the BSDF term (i.e. the render equation).
-            Lo += Le *its.shFrame.n.dot(emitterRecord.wi) * its.mesh->getBSDF()->eval(bsdfRecord);
+            Lo += Le * cosTheta * its.mesh->getBSDF()->eval(bsdfRecord);
         }
         return Lo;
     }
