@@ -51,30 +51,84 @@ public:
 		// This function call can be done by bsdf sampling routines.
 		// Hence the ray was already traced for us - i.e a visibility test was already performed.
 		// Hence just check if the associated normal in emitter query record and incoming direction are not backfacing
-		throw NoriException("AreaEmitter::eval() is not yet implemented!");
-	}
+
+    /* Area lights only emit on the front side */
+    if (lRec.n.dot(-lRec.wi) <= 0.0f)
+        return Color3f(0.0f);
+
+    /* Return emitted radiance */
+    return m_scale * m_radiance->eval(lRec.uv);
+}
+
 
 	virtual Color3f sample(EmitterQueryRecord & lRec, const Point2f & sample, float optional_u) const {
 		if (!m_mesh)
 			throw NoriException("There is no shape attached to this Area light!");
 
-		throw NoriException("AreaEmitter::sample() is not yet implemented!");
+    /* Sample a point on the mesh surface*/
+    m_mesh->samplePosition(
+        sample,   // random 2D sample
+        lRec.p,   // sampled position on light
+        lRec.n,   // sampled normal
+        lRec.uv   // sampled texture coordinates
+    );
+	
+	/* Sample a point on the mesh surface*/
+    lRec.wi = lRec.p - lRec.ref;
+    
+    lRec.dist = lRec.wi.norm(); /* Store the distance */
+
+    
+    if (lRec.dist <= Epsilon) /* Avoid divisions by zero */
+        return Color3f(0.0f);
+
+    lRec.wi /= lRec.dist;	/* Normalize the direction vector */
+
+	/* Reject samples coming from the back side of the area light*/
+	float cosTheta = lRec.n.dot(-lRec.wi);
+	
+	if (cosTheta <= 0.0f) /* Area lights only emit on the front side */
+		return Color3f(0.0f);
+
+    /* Convert the mesh area pdf into a solid-angle pdf */
+    float pdfArea = m_mesh->pdf(lRec.p);
+
+    lRec.pdf =
+        pdfArea *
+        (lRec.dist * lRec.dist) /
+        cosTheta;
+
+    if (lRec.pdf <= 0.0f)
+        return Color3f(0.0f);	
+	
+	Color3f Le = m_scale * m_radiance->eval(lRec.uv); /* Evaluate emitted radiance */
+	
+	return Le / lRec.pdf;
+
 	}
 
 	// Returns probability with respect to solid angle given by all the information inside the emitterqueryrecord.
 	// Assumes all information about the intersection point is already provided inside.
 	// WARNING: Use with care. Malformed EmitterQueryRecords can result in undefined behavior. 
 	//			Plus no visibility is considered.
+	
 	virtual float pdf(const EmitterQueryRecord &lRec) const {
 		if (!m_mesh)
 			throw NoriException("There is no shape attached to this Area light!");
 
-		throw NoriException("AreaEmitter::pdf() is not yet implemented!");
-	}
+    	float cosTheta = lRec.n.dot(-lRec.wi); /* Compute the cosine between the light normal and the direction towards the shaded point */
 
+    	if (cosTheta <= 0.0f) /* Backfacing samples cannot contribute to illumination */
+    	    return 0.0f;
 
-	// Get the parent mesh
-	void setParent(NoriObject *parent)
+    	float pdfArea = m_mesh->pdf(lRec.p); /* Surface-area density provided by Mesh::pdf() */
+
+    	/* Convert the density from area measure to solid-angle measure:  pdf_omega = pdf_area * r² / cos(theta) */
+    		return pdfArea * (lRec.dist * lRec.dist) /  cosTheta;
+		}
+
+		// Get the parent mesh
+		void setParent(NoriObject *parent)
 	{
 		auto type = parent->getClassType();
 		if (type == EMesh)

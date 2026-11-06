@@ -44,7 +44,14 @@ void Mesh::activate() {
             NoriObjectFactory::createInstance("diffuse", PropertyList()));
     }
 
-    m_pdf.reserve(m_F.cols());
+    /* Discrete probability distribution over triangles.
+       Each triangle is weighted by its surface area so that larger triangles are selected more often. */
+
+    m_pdf.clear();
+    for (uint32_t i = 0; i < m_F.cols(); ++i)
+        m_pdf.append(surfaceArea(i));
+
+    m_pdf.normalize(); /* Normalize the weights to obtain probabilities */
 }
 
 float Mesh::surfaceArea(n_UINT index) const {
@@ -114,15 +121,54 @@ Point3f Mesh::getCentroid(n_UINT index) const {
  */
 void Mesh::samplePosition(const Point2f &sample, Point3f &p, Normal3f &n, Point2f &uv) const
 {
-	throw NoriException("Mesh::samplePosition() is not yet implemented!");	
+    Point2f remapped(sample);
+
+    uint32_t triIndex = m_pdf.sampleReuse(remapped.x()); /* Select a triangle according to its area. */
+
+    uint32_t i0 = m_F(0, triIndex); /* Indices of the triangle vertices */
+    uint32_t i1 = m_F(1, triIndex);
+    uint32_t i2 = m_F(2, triIndex);
+
+    Point3f p0 = m_V.col(i0);
+    Point3f p1 = m_V.col(i1);
+    Point3f p2 = m_V.col(i2);
+
+    Point2f bary =
+        Warp::squareToUniformTriangle(remapped);
+
+    float u = bary.x();
+    float v = bary.y();
+    float w = 1.f - u - v;
+
+    p = p0*w + p1*u + p2*v;  /* Generate uniform barycentric coordinates inside the triangle */
+
+    if (m_N.cols() > 0) { /* If vertex normals exist, interpolate them */
+        Normal3f n0 = m_N.col(i0);
+        Normal3f n1 = m_N.col(i1);
+        Normal3f n2 = m_N.col(i2);
+
+        n = (n0*w + n1*u + n2*v).normalized();
+    } else { /* Otherwise compute the geometric normal directly */
+        n = Normal3f(
+            (p1-p0).cross(p2-p0).normalized()
+        );
+    }
+
+    if (m_UV.cols() > 0) { /* Compute texture coordinates if available */
+        Point2f uv0 = m_UV.col(i0);
+        Point2f uv1 = m_UV.col(i1);
+        Point2f uv2 = m_UV.col(i2);
+
+        uv = uv0*w + uv1*u + uv2*v;
+    } else {
+        uv = Point2f(0.f); /* Mesh does not contain texture coordinates */
+    }
 }
 
 /// Return the surface area of the given triangle
 float Mesh::pdf(const Point3f &p) const
 {
-	throw NoriException("Mesh::pdf() is not yet implemented!");	
-	
-	return 0.;
+    return 1.f / m_pdf.getNormalization();     /* Uniform distribution surface density : pdf = 1 / totalArea */
 }
 
 
