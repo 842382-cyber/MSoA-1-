@@ -27,3 +27,7 @@ C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\warp.cpp;C:\Users\al
 C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\0_ndotl.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\0_ndotl.obj
 C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\0_toon.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\0_toon.obj
 C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\0_aov.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\0_aov.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\normals.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\normals.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\pointlight.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\pointlight.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\direct_whitted.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\direct_whitted.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\direct_ems.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\direct_ems.obj

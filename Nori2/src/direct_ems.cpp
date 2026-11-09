@@ -22,29 +22,39 @@ public:
         if (!scene->rayIntersect(ray, its))
             return scene->getBackground(ray);
 
-        float pdflight;
-        EmitterQueryRecord emitterRecord(its.p);
+        if (its.mesh->isEmitter()){
+            // If the intersection point is on an emitter, add its emitted radiance
+            EmitterQueryRecord emitterRecord(its.mesh->getEmitter(), ray.o, its.p, its.shFrame.n, its.uv);
+            Lo += its.mesh->getEmitter()->eval(emitterRecord);
+        }
 
+        if (scene->getLights().empty())
+            return Lo;
+
+        float pdflight;
         // Sample one of the lights in the scene randomly and get its pdf
         const Emitter* em = scene->sampleEmitter(sampler->next1D(), pdflight);
+        if(pdflight <= 0.f){
+            return Lo; // The pdf is invalid, return 0
+        }
         
-        // Here we sample the point sources, getting its radiance
+        EmitterQueryRecord emitterRecord(its.p);
+
+        // Here we sample the light source, getting its importance weight (Le / pdf)
         // and direction.
         Color3f Le = em->sample(emitterRecord, sampler->next2D(), 0.);
+        if(emitterRecord.pdf <= 0.f || Le.isZero()){
+            return Lo; // The pdf is invalid or the radiance is zero, return 0
+        }
 
-        // Here perform a visibility query, to check whether the light
-        // source "em" is visible from the intersection point.
-        // For that, we create a ray object (shadow ray)
-        // and compute the intersection
-
-        // Check if the light source is below the surface
+        // Check if the light source is in the positive hemisphere of the shading normal
         float cosTheta = its.shFrame.n.dot(emitterRecord.wi);
         if (cosTheta <= 0.0f){
             return Lo; // The light source is below the surface, return 0
         }
             
-        Intersection its_shadow;
-        if(scene->rayIntersect(Ray3f(its.p + its.shFrame.n * Epsilon, emitterRecord.wi), its_shadow) && its_shadow.t <= emitterRecord.dist){
+        Ray3f shadowRay(its.p, emitterRecord.wi, Epsilon, emitterRecord.dist * (1.0f - 1e-4f));
+        if (scene->rayIntersect(shadowRay)) {
             return Lo; // The light source is occluded, return 0
         }
 
@@ -56,11 +66,9 @@ public:
         // of reference; and b) that both the incoming and outgoing
         // directions are assumed to start from the intersection point.
         BSDFQueryRecord bsdfRecord(its.toLocal(-ray.d), its.toLocal(emitterRecord.wi), its.uv, ESolidAngle);
-        // For each light, we accomulate the incident light times the
-        // foreshortening times the BSDF term (i.e. the render equation).
 
-        // Divide by the product of the  pdf of choosing the light source and the pdf of choosing the point on the light source
-        Lo += (Le * cosTheta * its.mesh->getBSDF()->eval(bsdfRecord)) / (pdflight * emitterRecord.pdf);
+        // em->sample() already returns Le / emitterRecord.pdf, so we only divide by pdflight
+        Lo += (Le * cosTheta * its.mesh->getBSDF()->eval(bsdfRecord)) / pdflight;
         
         return Lo;
     }

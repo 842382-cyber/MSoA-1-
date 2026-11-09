@@ -19,11 +19,11 @@ list(APPEND _cmake_import_check_files_for_OpenEXR::IlmImf "${_IMPORT_PREFIX}/lib
 set_property(TARGET OpenEXR::zlibstatic APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(OpenEXR::zlibstatic PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C"
-  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/zlibstatic.lib"
+  IMPORTED_LOCATION_DEBUG "${_IMPORT_PREFIX}/lib/zlibstatic_d.lib"
   )
 
 list(APPEND _cmake_import_check_targets OpenEXR::zlibstatic )
-list(APPEND _cmake_import_check_files_for_OpenEXR::zlibstatic "${_IMPORT_PREFIX}/lib/zlibstatic.lib" )
+list(APPEND _cmake_import_check_files_for_OpenEXR::zlibstatic "${_IMPORT_PREFIX}/lib/zlibstatic_d.lib" )
 
 # Import target "OpenEXR::IlmImfUtil" for configuration "Debug"
 set_property(TARGET OpenEXR::IlmImfUtil APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)

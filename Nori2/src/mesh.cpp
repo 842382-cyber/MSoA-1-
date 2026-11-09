@@ -121,54 +121,60 @@ Point3f Mesh::getCentroid(n_UINT index) const {
  */
 void Mesh::samplePosition(const Point2f &sample, Point3f &p, Normal3f &n, Point2f &uv) const
 {
-    Point2f remapped(sample);
+    // Aux variable to store the sample, since sampleReuse() will modify it and original sample is const
+    Point2f sample_aux = sample;
+    
+    // Select a random triangle based on the discrete pdf of triangle areas
+    float pdf;
+    uint32_t idx = m_pdf.sampleReuse(sample_aux.x(), pdf);
+    // Index of the triangle's vertices
+    uint32_t idx0 = m_F(0, idx);
+    uint32_t idx1 = m_F(1, idx);
+    uint32_t idx2 = m_F(2, idx);
 
-    uint32_t triIndex = m_pdf.sampleReuse(remapped.x()); /* Select a triangle according to its area. */
+    // Points of the triangle's vertices
+    Point3f p0 = m_V.col(idx0);
+    Point3f p1 = m_V.col(idx1);
+    Point3f p2 = m_V.col(idx2);
 
-    uint32_t i0 = m_F(0, triIndex); /* Indices of the triangle vertices */
-    uint32_t i1 = m_F(1, triIndex);
-    uint32_t i2 = m_F(2, triIndex);
+    Point2f barycentric = Warp::squareToUniformTriangle(sample_aux);
 
-    Point3f p0 = m_V.col(i0);
-    Point3f p1 = m_V.col(i1);
-    Point3f p2 = m_V.col(i2);
-
-    Point2f bary =
-        Warp::squareToUniformTriangle(remapped);
-
-    float u = bary.x();
-    float v = bary.y();
+    // Barycentric coordinates for the sampled point
+    float u = barycentric.x();
+    float v = barycentric.y();
     float w = 1.f - u - v;
 
-    p = p0*w + p1*u + p2*v;  /* Generate uniform barycentric coordinates inside the triangle */
+    // Compute the sampled 3d point on the triangle using barycentric coordinates
+    p = p0*w + p1*u + p2*v;
 
-    if (m_N.cols() > 0) { /* If vertex normals exist, interpolate them */
-        Normal3f n0 = m_N.col(i0);
-        Normal3f n1 = m_N.col(i1);
-        Normal3f n2 = m_N.col(i2);
-
+    // Interpolate the normal
+    if (m_N.cols() > 0) {
+        Normal3f n0 = m_N.col(idx0);
+        Normal3f n1 = m_N.col(idx1);
+        Normal3f n2 = m_N.col(idx2);
         n = (n0*w + n1*u + n2*v).normalized();
-    } else { /* Otherwise compute the geometric normal directly */
+    } else { // Geometry normal if no vertex normals are provided
         n = Normal3f(
             (p1-p0).cross(p2-p0).normalized()
         );
     }
 
-    if (m_UV.cols() > 0) { /* Compute texture coordinates if available */
-        Point2f uv0 = m_UV.col(i0);
-        Point2f uv1 = m_UV.col(i1);
-        Point2f uv2 = m_UV.col(i2);
-
+    // Interpolate the texture coordinates
+    if (m_UV.cols() > 0) {
+        Point2f uv0 = m_UV.col(idx0);
+        Point2f uv1 = m_UV.col(idx1);
+        Point2f uv2 = m_UV.col(idx2);
         uv = uv0*w + uv1*u + uv2*v;
     } else {
-        uv = Point2f(0.f); /* Mesh does not contain texture coordinates */
+        uv = Point2f(0.f); // Default UV coordinates if none are provided
     }
 }
 
 /// Return the surface area of the given triangle
 float Mesh::pdf(const Point3f &p) const
 {
-    return 1.f / m_pdf.getNormalization();     /* Uniform distribution surface density : pdf = 1 / totalArea */
+    // Uniform distribution over the surface of the mesh: pdf = 1 / totalArea
+    return m_pdf.getNormalization();
 }
 
 

@@ -131,7 +131,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\IlmImfUtil\Debug\IlmImfUtil-2_5_d.lib;..\IlmImf\Debug\IlmImf-2_5_d.lib;..\..\IlmBase\Imath\Debug\Imath-2_5_d.lib;..\..\IlmBase\Half\Debug\Half-2_5_d.lib;..\..\IlmBase\IexMath\Debug\IexMath-2_5_d.lib;..\..\IlmBase\IlmThread\Debug\IlmThread-2_5_d.lib;..\..\IlmBase\Iex\Debug\Iex-2_5_d.lib;..\..\..\zlib\Debug\zlibstatic.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\IlmImfUtil\Debug\IlmImfUtil-2_5_d.lib;..\IlmImf\Debug\IlmImf-2_5_d.lib;..\..\IlmBase\Imath\Debug\Imath-2_5_d.lib;..\..\IlmBase\Half\Debug\Half-2_5_d.lib;..\..\IlmBase\IexMath\Debug\IexMath-2_5_d.lib;..\..\IlmBase\IlmThread\Debug\IlmThread-2_5_d.lib;..\..\IlmBase\Iex\Debug\Iex-2_5_d.lib;..\..\..\zlib\Debug\zlibstatic_d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>

@@ -51,84 +51,80 @@ public:
 		// This function call can be done by bsdf sampling routines.
 		// Hence the ray was already traced for us - i.e a visibility test was already performed.
 		// Hence just check if the associated normal in emitter query record and incoming direction are not backfacing
+		
+		// Compute the cosine of the angle between the surface normal and the incoming direction
+		float cosTheta = lRec.n.dot(-lRec.wi);
+		// Check if the point is on the front side of the surface
+		if (cosTheta <= 0.f){
+			return Color3f(0.f);
+		}
 
-    /* Area lights only emit on the front side */
-    if (lRec.n.dot(-lRec.wi) <= 0.0f)
-        return Color3f(0.0f);
-
-    /* Return emitted radiance */
-    return m_scale * m_radiance->eval(lRec.uv);
-}
-
+		// Evaluate the radiance of the emitter at the sampled point. 
+		// Evaluation of the radiance is done with respect to the texture coordinates of the sampled point on the mesh.
+		// Multiply by the scale factor to account for the intensity of the emitter.
+		return m_radiance->eval(lRec.uv) * m_scale;
+	}
 
 	virtual Color3f sample(EmitterQueryRecord & lRec, const Point2f & sample, float optional_u) const {
 		if (!m_mesh)
 			throw NoriException("There is no shape attached to this Area light!");
 
-    /* Sample a point on the mesh surface*/
-    m_mesh->samplePosition(
-        sample,   // random 2D sample
-        lRec.p,   // sampled position on light
-        lRec.n,   // sampled normal
-        lRec.uv   // sampled texture coordinates
-    );
-	
-	/* Sample a point on the mesh surface*/
-    lRec.wi = lRec.p - lRec.ref;
-    
-    lRec.dist = lRec.wi.norm(); /* Store the distance */
+		m_mesh->samplePosition(sample, lRec.p, lRec.n, lRec.uv);
+		lRec.emitter = this;
 
-    
-    if (lRec.dist <= Epsilon) /* Avoid divisions by zero */
-        return Color3f(0.0f);
+		// Distance and direction from the reference point to the sampled point on the emitter
+		Vector3f vec = lRec.p - lRec.ref;
+		lRec.dist = vec.norm();
+		if(lRec.dist == 0.f){
+			lRec.pdf = 0.f;
+			return Color3f(0.f);
+		}
+		lRec.wi = vec / lRec.dist;
 
-    lRec.wi /= lRec.dist;	/* Normalize the direction vector */
+		// Compute the cosine of the angle between the surface normal and the incoming direction
+		float cosTheta = lRec.n.dot(-lRec.wi);
+		// Check if the point is on the front side of the surface
+		if (cosTheta <= 0.f){
+			lRec.pdf = 0.f;
+			return Color3f(0.f);
+		}
 
-	/* Reject samples coming from the back side of the area light*/
-	float cosTheta = lRec.n.dot(-lRec.wi);
-	
-	if (cosTheta <= 0.0f) /* Area lights only emit on the front side */
-		return Color3f(0.0f);
+		// Compute the pdf with respect to solid angle
+		lRec.pdf = pdf(lRec);
+		if (lRec.pdf <= 0.f){
+			return Color3f(0.f);
+		}
 
-    /* Convert the mesh area pdf into a solid-angle pdf */
-    float pdfArea = m_mesh->pdf(lRec.p);
-
-    lRec.pdf =
-        pdfArea *
-        (lRec.dist * lRec.dist) /
-        cosTheta;
-
-    if (lRec.pdf <= 0.0f)
-        return Color3f(0.0f);	
-	
-	Color3f Le = m_scale * m_radiance->eval(lRec.uv); /* Evaluate emitted radiance */
-	
-	return Le / lRec.pdf;
-
+		// Return importance weight: radiance divided by solid angle pdf
+		return eval(lRec) / lRec.pdf;
 	}
 
 	// Returns probability with respect to solid angle given by all the information inside the emitterqueryrecord.
 	// Assumes all information about the intersection point is already provided inside.
 	// WARNING: Use with care. Malformed EmitterQueryRecords can result in undefined behavior. 
 	//			Plus no visibility is considered.
-	
 	virtual float pdf(const EmitterQueryRecord &lRec) const {
 		if (!m_mesh)
 			throw NoriException("There is no shape attached to this Area light!");
 
-    	float cosTheta = lRec.n.dot(-lRec.wi); /* Compute the cosine between the light normal and the direction towards the shaded point */
-
-    	if (cosTheta <= 0.0f) /* Backfacing samples cannot contribute to illumination */
-    	    return 0.0f;
-
-    	float pdfArea = m_mesh->pdf(lRec.p); /* Surface-area density provided by Mesh::pdf() */
-
-    	/* Convert the density from area measure to solid-angle measure:  pdf_omega = pdf_area * r² / cos(theta) */
-    		return pdfArea * (lRec.dist * lRec.dist) /  cosTheta;
+		// Compute the cosine of the angle between the surface normal and the incoming direction
+		float cosTheta = lRec.n.dot(-lRec.wi);
+		// Check if the point is on the surface of the mesh
+		if (cosTheta <= 0.f){
+			return 0.f;
 		}
 
-		// Get the parent mesh
-		void setParent(NoriObject *parent)
+		// Compute the pdf with respect to solid angle: pdf_solid = pdf_area * dist_squared / cosTheta
+		float pdf_area = m_mesh->pdf(lRec.p);
+		float dist_squared = (lRec.p - lRec.ref).squaredNorm();
+		float pdf_solid = pdf_area * dist_squared / cosTheta;
+
+		return pdf_solid;
+	}
+
+
+	// Get the parent mesh
+	void setParent(NoriObject *parent)
 	{
 		auto type = parent->getClassType();
 		if (type == EMesh)

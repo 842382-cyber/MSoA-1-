@@ -103,6 +103,11 @@ add_executable(nori
   src/0_toon.cpp
   src/0_aov.cpp
 
+  src/normals.cpp
+  src/pointlight.cpp
+  src/direct_whitted.cpp
+  src/direct_ems.cpp
+
   # Add your new dependencies here
   # Remember: you might need to rerun cmake after adding any file here!
 )
