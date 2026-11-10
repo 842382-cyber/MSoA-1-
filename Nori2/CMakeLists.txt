@@ -126,6 +126,8 @@ if(NORI_BUILD_WARPTEST)
     src/object.cpp
     src/proplist.cpp
     src/common.cpp
+    include/nori/reflectance.h
+    src/reflectance.cpp
   )
 endif()
 
