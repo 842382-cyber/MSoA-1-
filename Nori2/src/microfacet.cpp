@@ -340,4 +340,3 @@ NORI_REGISTER_CLASS(RoughDielectric, "roughdielectric");
 NORI_REGISTER_CLASS(RoughSubstrate, "roughsubstrate");
 
 NORI_NAMESPACE_END
- 
