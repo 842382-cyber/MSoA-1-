@@ -296,7 +296,8 @@ public:
             return 0.0f;
 
         Vector3f wh= (bRec.wi + bRec.wo).normalized();
-        float F= Reflectance::fresnel(wh.dot(bRec.wi), m_extIOR, m_intIOR);
+        float p_f= Reflectance::fresnel(wh.dot(bRec.wi), m_extIOR, m_intIOR);
+        float p_diff=(1-p_f);
         
 
 		//throw NoriException("RoughSubstrate::eval() is not yet implemented!");
