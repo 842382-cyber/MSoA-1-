@@ -31,3 +31,5 @@ C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\normals.cpp;C:\Users
 C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\pointlight.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\pointlight.obj
 C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\direct_whitted.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\direct_whitted.obj
 C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\direct_ems.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\direct_ems.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\direct_mats.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\direct_mats.obj
+C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\src\direct_mis.cpp;C:\Users\albas\OneDrive\Documentos\GitHub\MSoA-1-\Nori2\build\nori.dir\Release\direct_mis.obj
