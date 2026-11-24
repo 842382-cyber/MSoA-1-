@@ -111,6 +111,10 @@ add_executable(nori
   src/direct_mats.cpp
   src/direct_mis.cpp
 
+  src/path.cpp
+  src/path_mis.cpp
+  src/path_nee.cpp
+
   # Add your new dependencies here
   # Remember: you might need to rerun cmake after adding any file here!
 )
